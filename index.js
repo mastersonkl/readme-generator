@@ -109,4 +109,48 @@ const badges = {
         "[![Generic badge](https://img.shields.io/badge/License-Unlicense-<COLOR>.svg)](https://shields.io/)",
 };
 
+function generateMD(answers) {
+    return `
+  
+[![made-with-Markdown](https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg)](http://commonmark.org) 
+${badges[answers.license]}
+# ${answers.title}
+## Description
+${answers.description}
+**## Table of Contents**
+1. [Installation Instructions](#installation-instructions)
+2. [Usage Information](#usage-information)
+3. [Contributors](#contributors)
+4. [Test Instructions](#test-instructions)
+5. [License](#license)
+6. [Questions](#questions)
+## Installation Instructions
+${answers.installation}
+## Usage Information
+${answers.usage}
+## Contribution
+${answers.credits}
+## Test Instructions
+${answers.test}
+## License
+*${answers.license}*
+${license[answers.license]}
+# Questions
+For any questions about the project, please feel free to reach out to me on github or via email.  Thank you for viewing this project!
+${answers.github}
+${answers.email}
+  `;
+}
+
 promptUser()
+    .then(function (answers) {
+        const markdown = generateMD(answers);
+
+        return writeFileAsync("README.md", markdown);
+    })
+    .then(function () {
+        console.log("Successfully wrote to README.md");
+    })
+    .catch(function (err) {
+        console.log(err);
+    });
