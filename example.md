@@ -1,8 +1,9 @@
+# readme-generator
 
-  
+
 [![made-with-Markdown](https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg)](http://commonmark.org) 
 [![Generic badge](https://img.shields.io/badge/License-MIT-<COLOR>.svg)](https://shields.io/)
-# READme
+# README 
 ## Description
 This is a CLI application that focuses on the structure and formatting of markdown files.
 **## Table of Contents**
@@ -19,7 +20,7 @@ After the program has been installed, run it by typing node index.js into your t
 ## Contribution
  Created by Kendall Masterson.
 ## Test Instructions
-View My Demo here: https://drive.google.com/file/d/1e3gOR9eAQS8aE0IQHN_mH2uZztiOUmdJ/view?usp=sharing 
+View My Demo here: 
 ## License
 *MIT License*
 A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.
@@ -27,4 +28,3 @@ A short and simple permissive license with conditions only requiring preservatio
 For any questions about the project, please feel free to reach out to me on github or via email.  Thank you for viewing this project!
 https://github.com/mastersonkl/readme-generator
 masterson.kendall@gmail.com
-  
